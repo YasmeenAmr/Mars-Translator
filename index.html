@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Translator</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <h1>Mars Rover Translator</h1>
+    <script src="script.js"></script>
+    <div>
+    <div id="form">
+        <div id="from">
+            <p class="command">From Earth</p>
+            <input type="text" id="command">
+            <p id="warn"></p>
+        </div>
+        <div id="to">
+            <label for="Translate">To Mars</label>
+            <p id="T"></p>
+            <label for="Translate">Coordinate</label>
+            <p id="coord"></p>
+        </div>
+    </div>
+        <button onclick="fun()">Translate</button>
+      <div id="two"> 
+     <div id="direction">
+        <p id="cform">Coordinate</p>
+        <label for="x">X</label>
+        <input type="text" id="axisx">
+        <label for="y">Y</label>
+        <input type="text" id="axisy">
+     </div>
+     <div id="dir">
+        <label for="direct">Direction</label>
+            <p id="d"></p>
+     </div>
+    </div> 
+     <button onclick="calculat()" id="bn">Show</button>
+    </div>
+</body>
+</html>

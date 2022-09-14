@@ -1,0 +1,175 @@
+body {
+    background-image: url("9.png");
+    background-size: 1440px 1000px;
+  }
+
+h1{
+    width: 370px;
+    color:white;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 480px;
+    border: 5px solid white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: rgba(81, 83, 85, 0.596);
+    border-radius: 12px;
+}
+
+div{
+    width: 850px;
+    height: 500px;;
+    background-color:rgba(81, 83, 85, 0.205);
+    margin-left: 250px;
+    border-radius: 12px;
+}
+#form{ 
+    display: flex;
+    width: 1000px;
+    height: 150px;
+    background-color:transparent;
+    margin-left: 0;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:aliceblue;
+    
+}
+#from {
+    width: 500px;
+    height: 80px;
+    margin-left: 40px;
+    background-color:transparent;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: aliceblue;
+}
+
+#to{
+    width: 500px;
+    height: 80px;
+    margin-top: 25px;
+    margin-left: 40px; 
+    background-color: transparent;
+   
+}
+.command{
+    margin-top: 25px;
+    color: aliceblue;
+    background-color:transparent;
+    width: 100;
+    height: 20px;
+}
+#command{
+    width:250px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    
+}
+#warn{
+    color:rgb(214, 47, 47);
+    background-color:transparent;
+    width:250px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+p{
+    width:250px;
+    height: 100px;
+    border-radius: 12px ;
+    border: none;
+    background-color:rgb(255, 255, 255);
+    color:black;
+    text-align: left;
+    padding-left: 10PX;
+    padding-top: 8px;
+   
+
+}
+#T{
+    overflow: auto;
+}
+#d{
+    overflow: auto;
+}
+
+#coord{
+    width:250px;
+    height:25px; 
+}
+
+button{
+    width: 130px;
+    height: 30px;
+    margin-top: 130px; 
+    margin-left: 340px;
+    color: #07021d;
+    border-color: #07021d;
+    text-align: center;
+    border-radius: 12px;
+}
+
+button:hover{
+    background-color: #07021d; 
+    border: none;
+    color: white;
+}
+#direction{
+    width: 1000px;
+    height: 100px;
+    background-color:transparent;
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:aliceblue;
+    margin-left:40px ;
+    
+}
+#cform{
+    width: 250px;
+    height: 25px;
+    color: aliceblue;
+    background-color: transparent;
+    margin-left:10px ;
+}
+
+label{
+    margin-left: 5px;
+}
+
+#axisx{
+    width:40px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    
+}
+#axisy{
+    width:40px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    
+}
+#bn{
+    margin-top: 20px;
+}
+
+#two{
+    display: flex;
+    margin-left: 0px;
+    background-color: transparent;
+    height: 100px;
+}
+
+#d{
+    height: 50px;
+}
+
+#dir{
+    margin-top: 20px;
+    margin-left: 170px;
+    margin-right: 40px;
+   
+    color: aliceblue;
+    background-color:transparent;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
