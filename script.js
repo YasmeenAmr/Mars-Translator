@@ -129,13 +129,11 @@ x1=x1-1
 xarray.push("B")
 console.log(x1,y1)*/
   
- 
-
 }
 
 nourthCheck4=()=>{
     console.log("R")
-while(x1>x2 ){
+ while(x1>x2 ){
     console.log(x1,y1,"F")
     obstacles.forEach(element => {
         element[0]==x1+1 && element[1]==y1? (console.log("R"),xarray.push("R"),y1=y1-1):false
@@ -162,45 +160,45 @@ x2>x1? nourthCheck3():nourthCheck4()
 
 South
 south=()=>{
-    nourthCheck1=()=>{
+    southCheck1=()=>{
         while(y1<y2 ){
-            console.log(x1,y1)
+            //console.log(x1,y1)
             for(var i=y1;i<y2;i++){
-                yarray.push("F")
+                yarray.push("B")
             }
             y1++
         }
         console.log(yarray)
     }
     
-    nourthCheck2=()=>{ 
+    southCheck2=()=>{ 
     while(y1>y2 ){
-        console.log(x1,y1,"B")
+       // console.log(x1,y1,"B")
         for(var i=y1;i>y2;i--){
-            yarray[i]="B"
+            yarray[i]="F"
         }
         y1-- 
     }
     console.log(yarray)
     }
     
-    nourthCheck3=()=>{
-       xarray[0]="R"
+    southCheck3=()=>{
+       xarray[0]="L"
     while(x1<x2 ){
         //console.log(x1,y1,"F")
     
         obstacles.forEach(element => {
-            element[0]==x1+1 && element[1]==y1? (console.log("L"),xarray.push("L"),y1=y1+1):false
+            element[0]==x1+1 && element[1]==y1? (console.log("R"),xarray.push("R"),y1=y1+1):false
         })
-         xarray.push("F")
+         xarray.push("B")
         x1++
         console.log(xarray)
     }
     //console.log("l")
-    xarray.push("L")
+    xarray.push("R")
     y1=y1-1
     //console.log("B")
-    xarray.push("B")
+    xarray.push("F")
     console.log(x1,y1)
     
     dText=[...yarray,...xarray] 
@@ -208,174 +206,174 @@ south=()=>{
     
     }
     
-    nourthCheck4=()=>{
-        console.log("R")
+    southCheck4=()=>{
+        console.log("L")
     while(x1>x2 ){
-        console.log(x1,y1,"F")
+        //console.log(x1,y1,"F")
         obstacles.forEach(element => {
-            element[0]==x1+1 && element[1]==y1? (console.log("R"),xarray.push("R"),y1=y1-1):false
+            element[0]==x1+1 && element[1]==y1? (console.log("L"),xarray.push("L"),y1=y1-1):false
         })
-         xarray.push("F")
+         xarray.push("B")
         x1--
         console.log(xarray)
     }
     //console.log("l")
-    xarray.push("L")
+    xarray.push("R")
     y1=y1+1
     //console.log("B")
-    xarray.push("B")
+    xarray.push("F")
     console.log(x1,y1)
     
     dText=[...yarray,...xarray] 
      final.innerHTML=dText
     }
-    y2>y1? nourthCheck1():nourthCheck2()
-    x2>x1? nourthCheck3():nourthCheck4()
+    y2>y1? southCheck1():southCheck2()
+    x2>x1? southCheck3():southCheck4()
 
 }
 
 //East
 east=()=>{
     nourthCheck1=()=>{
-        while(y1<y2 ){
+        while(x1<x2 ){
             console.log(x1,y1)
-            for(var i=y1;i<y2;i++){
-                yarray.push("F")
+            for(var i=X1;i<X2;i++){
+                xarray.push("F")
             }
-            y1++
+            X1++
         }
-        console.log(yarray)
+        console.log(xarray)
     }
     
     nourthCheck2=()=>{ 
-    while(y1>y2 ){
+    while(x1>x2 ){
         console.log(x1,y1,"B")
-        for(var i=y1;i>y2;i--){
-            yarray[i]="B"
+        for(var i=x1;i>x2;i--){
+            xarray[i]="B"
         }
-        y1-- 
+        x1-- 
     }
-    console.log(yarray)
+    console.log(xarray)
     }
     
     nourthCheck3=()=>{
-       xarray[0]="R"
-    while(x1<x2 ){
+       xarray[0]="L"
+    while(y1<y2 ){
         //console.log(x1,y1,"F")
     
         obstacles.forEach(element => {
-            element[0]==x1+1 && element[1]==y1? (console.log("L"),xarray.push("L"),y1=y1+1):false
+            element[0]==x1+1 && element[1]==y1? (console.log("L"),xarray.push("L"),x1=x1+1):false
         })
-         xarray.push("F")
-        x1++
-        console.log(xarray)
+         yarray.push("F")
+        y1++
+        console.log(yarray)
     }
     //console.log("l")
-    xarray.push("L")
-    y1=y1-1
+    yarray.push("R")
+    x1=x1-1
     //console.log("B")
     xarray.push("B")
     console.log(x1,y1)
     
-    dText=[...yarray,...xarray] 
+    dText=[...xarray,...yarray] 
      final.innerHTML=dText
     }
     
     nourthCheck4=()=>{
-        console.log("R")
-    while(x1>x2 ){
-        console.log(x1,y1,"F")
+        console.log("L")
+    while(y1>y2 ){
+        console.log(x1,y1,"B")
         obstacles.forEach(element => {
-            element[0]==x1+1 && element[1]==y1? (console.log("R"),xarray.push("R"),y1=y1-1):false
+            element[0]==x1+1 && element[1]==y1? (console.log("R"),xarray.push("R"),x1=x1-1):false
         })
-         xarray.push("F")
-        x1--
-        console.log(xarray)
+         yarray.push("F")
+        y1--
+        console.log(yarray)
     }
     //console.log("l")
-    xarray.push("L")
+    yarray.push("R")
     y1=y1+1
     //console.log("B")
-    xarray.push("B")
+    yarray.push("B")
     console.log(x1,y1)
     
-    dText=[...yarray,...xarray] 
+    dText=[...xarray,...yarray] 
      final.innerHTML=dText
     }
-    y2>y1? nourthCheck1():nourthCheck2()
-    x2>x1? nourthCheck3():nourthCheck4()
+    x2>x1? eastCheck1():eastCheck2()
+    y2>y1? eastCheck3():eastCheck4()
 }
 
 //West
 west=()=>{
     nourthCheck1=()=>{
-        while(y1<y2 ){
+        while(x1<x2 ){
             console.log(x1,y1)
-            for(var i=y1;i<y2;i++){
-                yarray.push("F")
+            for(var i=x1;i<x2;i++){
+                xarray.push("B")
             }
-            y1++
+            x1++
         }
-        console.log(yarray)
+        console.log(xarray)
     }
     
     nourthCheck2=()=>{ 
-    while(y1>y2 ){
-        console.log(x1,y1,"B")
-        for(var i=y1;i>y2;i--){
-            yarray[i]="B"
+    while(x1>x2 ){
+        console.log(x1,y1,"F")
+        for(var i=x1;i>x2;i--){
+            xarray[i]="F"
         }
-        y1-- 
+        x1-- 
     }
-    console.log(yarray)
+    console.log(xarray)
     }
     
     nourthCheck3=()=>{
-       xarray[0]="R"
+       yarray[0]="R"
     while(x1<x2 ){
         //console.log(x1,y1,"F")
     
         obstacles.forEach(element => {
-            element[0]==x1+1 && element[1]==y1? (console.log("L"),xarray.push("L"),y1=y1+1):false
+            element[0]==x1+1 && element[1]==y1? (console.log("L"),xarray.push("L"),x1=x1+1):false
         })
-         xarray.push("F")
-        x1++
-        console.log(xarray)
+         yarray.push("F")
+        y1++
+        console.log(yarray)
     }
     //console.log("l")
-    xarray.push("L")
-    y1=y1-1
+    yarray.push("L")
+    x1=x1-1
     //console.log("B")
     xarray.push("B")
     console.log(x1,y1)
     
-    dText=[...yarray,...xarray] 
+    dText=[...xarray,...yarray] 
      final.innerHTML=dText
     }
     
     nourthCheck4=()=>{
         console.log("R")
-    while(x1>x2 ){
-        console.log(x1,y1,"F")
+    while(y1>y2 ){
+        console.log(x1,y1,"B")
         obstacles.forEach(element => {
-            element[0]==x1+1 && element[1]==y1? (console.log("R"),xarray.push("R"),y1=y1-1):false
+            element[0]==x1+1 && element[1]==y1? (console.log("L"),xarray.push("L"),x1=x1-1):false
         })
-         xarray.push("F")
-        x1--
-        console.log(xarray)
+         yarray.push("B")
+        y1--
+        console.log(yarray)
     }
     //console.log("l")
-    xarray.push("L")
-    y1=y1+1
+    yarray.push("L")
+    x1=x1+1
     //console.log("B")
-    xarray.push("B")
+    xarray.push("F")
     console.log(x1,y1)
     
-    dText=[...yarray,...xarray] 
+    dText=[...xarray,...yarray] 
      final.innerHTML=dText
     }
-    y2>y1? nourthCheck1():nourthCheck2()
-    x2>x1? nourthCheck3():nourthCheck4()
+    x2>x1? westCheck1():westCheck2()
+    y2>y1? westCheck3():westCheck4()
 }
 
 z3=="NORTH"? nourth(): false
