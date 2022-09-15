@@ -14,25 +14,25 @@ fun=()=>{
     //Translate earthsign command to mars 
     for (var i = 0; i < earthsign.length; i++) {
         console.log(earthsign.charAt(i))
-        earthsign[i]=="R" && z=="NORTH"? (console.log("Return Right to EAST"),vText[i]="Return Right to EAST", (z="EAST")):
-        earthsign[i]=="R" && z=="SOUTH"? (console.log("Return Right to WEST") ,vText[i]="Return Right to WEST", (z="WEST")):
-        earthsign[i]=="R" && z=="EAST"? (console.log("Return Right to SOUTH") ,vText[i]="Return Right to SOUTH", (z="SOUTH")):
-        earthsign[i]=="R" && z=="WEST"? (console.log("Return Right to NORTH") ,vText[i]="Return Right to NORTH", (z="NORTH")):
+        earthsign[i]=="R" && z=="NORTH"? (console.log("Return Right to EAST"),vText[i]="Rotate Right by 90 degrees to EAST", (z="EAST")):
+        earthsign[i]=="R" && z=="SOUTH"? (console.log("Return Right to WEST") ,vText[i]="Rotate Right by 90 degrees to WEST", (z="WEST")):
+        earthsign[i]=="R" && z=="EAST"? (console.log("Return Right to SOUTH") ,vText[i]="Rotate Right by 90 degrees to SOUTH", (z="SOUTH")):
+        earthsign[i]=="R" && z=="WEST"? (console.log("Return Right to NORTH") ,vText[i]="Rotate Right by 90 degrees to NORTH", (z="NORTH")):
 
-        earthsign[i]=="L" && z=="NORTH"? (console.log("Return Left to WEST") ,vText[i]="Return Left to WEST", (z="WEST")):
-        earthsign[i]=="L" && z=="SOUTH"? (console.log("Return Left to EAST") ,vText[i]="Return Left to EAST", (z="EAST")):
-        earthsign[i]=="L" && z=="EAST"? (console.log("Return Left to NORTH") ,vText[i]="Return Left to NORTH", (z="NORTH")):
-        earthsign[i]=="L" && z=="WEST"? (console.log("Return Left to SOUTH") ,vText[i]="Return Left to SOUTH", (z="SOUTH")):
+        earthsign[i]=="L" && z=="NORTH"? (console.log("Return Left to WEST") ,vText[i]="Rotate Left by 90 degrees to WEST", (z="WEST")):
+        earthsign[i]=="L" && z=="SOUTH"? (console.log("Return Left to EAST") ,vText[i]="Rotate Left by 90 degrees to EAST", (z="EAST")):
+        earthsign[i]=="L" && z=="EAST"? (console.log("Return Left to NORTH") ,vText[i]="Rotate Left by 90 degrees to NORTH", (z="NORTH")):
+        earthsign[i]=="L" && z=="WEST"? (console.log("Return Left to SOUTH") ,vText[i]="Rotate Left by 90 degrees to SOUTH", (z="SOUTH")):
 
-        earthsign[i]=="F" && z=="NORTH"? (console.log("Go Forward to NORTH") ,vText[i]="Go Forward to NORTH", (x,y=y+1)):
-        earthsign[i]=="F" && z=="SOUTH"? (console.log("Go Forward to SOUTH") ,vText[i]="Go Forward to SOUTH", (x,y=y-1)):
-        earthsign[i]=="F" && z=="EAST"? (console.log("Go Forward to EAST") , vText[i]="Go Forward to EAST",(x=x+1,y)):
-        earthsign[i]=="F" && z=="WEST"? (console.log("Go Forward to WEST") ,vText[i]="Go Forward to WEST",(x=x-1,y)):
+        earthsign[i]=="F" && z=="NORTH"? (console.log("Go Forward to NORTH") ,vText[i]="Move Forward on NORTH", (x,y=y+1)):
+        earthsign[i]=="F" && z=="SOUTH"? (console.log("Go Forward to SOUTH") ,vText[i]="Move Forward on SOUTH", (x,y=y-1)):
+        earthsign[i]=="F" && z=="EAST"? (console.log("Go Forward to EAST") , vText[i]="Move Forward on EAST",(x=x+1,y)):
+        earthsign[i]=="F" && z=="WEST"? (console.log("Go Forward to WEST") ,vText[i]="Move Forward on WEST",(x=x-1,y)):
 
-        earthsign[i]=="B" && z=="NORTH"? (console.log("Go Backward to SOUTH"), vText[i]="Go Backward to SOUTH", (x,y=y-1)):
-        earthsign[i]=="B" && z=="SOUTH"? (console.log("Go Backward to NORTH") , vText[i]="Go Backward to NORTH",(x,y=y+1)):
-        earthsign[i]=="B" && z=="EAST"? (console.log("Go Backward to EAST") ,vText[i]="Go Backward to EAST", (x=x-1,y)):
-        earthsign[i]=="B" && z=="WEST"?(console.log("Go Backward to WEST"),vText[i]="Go Backward to WEST", (x=x+1,y)) :
+        earthsign[i]=="B" && z=="NORTH"? (console.log("Go Backward to SOUTH"), vText[i]="Move Backward on SOUTH", (x,y=y-1)):
+        earthsign[i]=="B" && z=="SOUTH"? (console.log("Go Backward to NORTH") , vText[i]="Move Backward on NORTH",(x,y=y+1)):
+        earthsign[i]=="B" && z=="EAST"? (console.log("Go Backward to EAST") ,vText[i]="Move Backward on EAST", (x=x-1,y)):
+        earthsign[i]=="B" && z=="WEST"?(console.log("Go Backward to WEST"),vText[i]="Move Backward on WEST", (x=x+1,y)) :
         alert("Invalid input please us (F,B,L,R) ONLY ")
 }
 ouPut.innerHTML=vText
