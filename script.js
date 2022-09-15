@@ -382,6 +382,6 @@ z3=="EAST"? east():false
 z3=="WEST"? west():false
 
 }
-calculat()
+//calculat()
 }
 fun()
