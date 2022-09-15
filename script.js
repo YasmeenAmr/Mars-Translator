@@ -158,7 +158,7 @@ x2>x1? nourthCheck3():nourthCheck4()
 }
 
 
-South
+//South
 south=()=>{
     southCheck1=()=>{
         while(y1<y2 ){
@@ -234,7 +234,7 @@ south=()=>{
 
 //East
 east=()=>{
-    nourthCheck1=()=>{
+    eastCheck1=()=>{
         while(x1<x2 ){
             console.log(x1,y1)
             for(var i=X1;i<X2;i++){
@@ -245,7 +245,7 @@ east=()=>{
         console.log(xarray)
     }
     
-    nourthCheck2=()=>{ 
+    eastCheck2=()=>{ 
     while(x1>x2 ){
         console.log(x1,y1,"B")
         for(var i=x1;i>x2;i--){
@@ -256,7 +256,7 @@ east=()=>{
     console.log(xarray)
     }
     
-    nourthCheck3=()=>{
+    eastCheck3=()=>{
        xarray[0]="L"
     while(y1<y2 ){
         //console.log(x1,y1,"F")
@@ -279,7 +279,7 @@ east=()=>{
      final.innerHTML=dText
     }
     
-    nourthCheck4=()=>{
+    eastCheck4=()=>{
         console.log("L")
     while(y1>y2 ){
         console.log(x1,y1,"B")
@@ -306,7 +306,7 @@ east=()=>{
 
 //West
 west=()=>{
-    nourthCheck1=()=>{
+    westCheck1=()=>{
         while(x1<x2 ){
             console.log(x1,y1)
             for(var i=x1;i<x2;i++){
@@ -317,7 +317,7 @@ west=()=>{
         console.log(xarray)
     }
     
-    nourthCheck2=()=>{ 
+    westCheck2=()=>{ 
     while(x1>x2 ){
         console.log(x1,y1,"F")
         for(var i=x1;i>x2;i--){
@@ -328,7 +328,7 @@ west=()=>{
     console.log(xarray)
     }
     
-    nourthCheck3=()=>{
+    westCheck3=()=>{
        yarray[0]="R"
     while(x1<x2 ){
         //console.log(x1,y1,"F")
@@ -351,7 +351,7 @@ west=()=>{
      final.innerHTML=dText
     }
     
-    nourthCheck4=()=>{
+    westCheck4=()=>{
         console.log("R")
     while(y1>y2 ){
         console.log(x1,y1,"B")
